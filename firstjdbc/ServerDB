@@ -1,0 +1,15 @@
+-- Table: public."User"
+
+-- DROP TABLE public."User";
+
+CREATE TABLE public."User"
+(
+  "Name" character varying,
+  "Roll" integer NOT NULL,
+  CONSTRAINT "PKroll" PRIMARY KEY ("Roll")
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE public."User"
+  OWNER TO postgres;
